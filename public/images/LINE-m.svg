@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="336.667" height="1022.833" viewBox="0 0 336.667 1022.833">
+    <defs>
+        <style>
+            .cls-1{fill:none;stroke:#c9c9c9;stroke-width:2px}
+        </style>
+    </defs>
+    <g id="LINE" transform="translate(431.667 -361.5) rotate(90)">
+        <path id="패스_126" d="M0 0h70.333" class="cls-1" transform="translate(362.5 430.667) rotate(-90)"/>
+        <path id="패스_126-2" d="M0 0h438.5" class="cls-1" transform="translate(363 430.667)"/>
+        <path id="패스_127" d="M0 0h335" class="cls-1" transform="translate(801.5 431) rotate(-90)"/>
+        <path id="패스_126-3" d="M0 0l508.25.25" class="cls-1" transform="translate(800.5 96)"/>
+        <path id="패스_132" d="M0 0h335.333" class="cls-1" transform="translate(1307.5 431.167) rotate(-90)"/>
+        <path id="패스_132-2" d="M0 0h77.833" class="cls-1" transform="translate(1306.5 430.5)"/>
+    </g>
+</svg>

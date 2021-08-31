@@ -1,0 +1,133 @@
+@charset "utf-8";
+
+* { box-sizing: border-box; }
+body, h1, h2, h3, h4, h5, h6, ul, li, ol, dl, dt, dd, p { margin: 0; padding: 0; }
+body { font-family: 'Roboto', 'Noto Sans KR', sans-serif; letter-spacing: -0.2px; word-break: keep-all; width: 100vw; overflow-x: hidden; }
+div, header, footer, section, aside, nav { box-sizing: border-box; }
+a { text-decoration: none; color: #000; display: block; }
+ul { list-style: none; }
+img { vertical-align: middle; width: 100%; }
+.clear::after { content:""; display: block; clear: both; }
+.col-group { display: flex; }
+.container { width: 1280px; margin: 0 auto; }
+textarea { resize: none; }
+pre {font-family: 'Roboto', 'Noto Sans KR', sans-serif;}
+
+#header { height: 90px; position: fixed; top: 0; left: 0; right: 0; background: rgba(0, 0, 0, 0); transition: .5s; z-index: 9999; }
+#header.scroll { background: rgba(0, 0, 0, .5); }
+#header .header-wrap { height: 100%; justify-content: space-between; align-items: center; overflow: hidden; position: relative; z-index: 99999; }
+#header .header-wrap .logo { width: 190px; }
+#header .header-wrap .logo-m { display: none; }
+#header .header-wrap .menu-btn { width: 50px; cursor: pointer; position: absolute; top: 20px; right: 0; z-index: 99; }
+#header .header-wrap .menu-wrap { align-items: center; margin-right: 50px; }
+#header .header-wrap .menu-wrap ul { transition: 1s; }
+#header .header-wrap .menu-wrap ul li { width: 150px; height: 50px; text-align: center; padding-top: 18px; }
+#header .header-wrap .menu-wrap ul li a { font-size: 17px; color: #fff; display: inline-block; padding-bottom: 7px; }
+#header .header-wrap .menu-wrap ul li a:hover { font-weight: bold; border-bottom: 1px solid #fff; }
+#header .header-wrap .menu-wrap.hide ul { transform: translateX(calc( 100% + 50px )); }
+#header .header-wrap .menu-wrap-bg { display: none; }
+
+#footer { border-top: 1px solid #c9c9c9; }
+#footer .footer-wrap { justify-content: space-between; padding: 50px 0; }
+#footer .footer-wrap .logo { width: 220px; }
+#footer .footer-wrap ul li { padding-bottom: 6px; font-size: 15px; font-weight: 300; align-items: center; color: #333; }
+#footer .footer-wrap ul li:last-child { padding-top: 10px; color: #aeaeae; }
+#footer .footer-wrap ul li p { padding-right: 30px; }
+#footer .footer-wrap ul li p span { font-weight: bold; padding-right: 8px; position: relative; }
+#footer .footer-wrap ul li p span::after { content: ":"; display: block; position: absolute; top: 0; right: 0; }
+#footer .footer-wrap.m { display: none; }
+
+#inquiry .inquiry-wrap { position: fixed; top: 0; right: 0; transform: translateX(100%); transition: .3s; z-index: 9999;}
+#inquiry .inquiry-wrap.open { transform: translateX(0); }
+#inquiry .inquiry-btn { width: 60px; height: 200px; text-align: center; color: #fff; background: #00508f; font-size: 18px; font-weight: bold; display: flex; flex-flow: column; justify-content: center; position: absolute; top: 240px; left: -60px; cursor: pointer; z-index: -1;}
+#inquiry .inquiry-box {  background: #fff; margin: 0; width: 768px; padding: 60px 50px 20px; height: 100vh; overflow-y: scroll; }
+#inquiry .inquiry-box .close { width: 45px; position: absolute; top: 35px; right: 30px; cursor: pointer; }
+#inquiry .inquiry-box h2 { font-size: 50px; color: #00508f; text-align: left; letter-spacing: -1px; font-weight: bold; margin-bottom: 20px;}
+#inquiry .inquiry-box h2::after, #inquiry .inquiry-box h2::before { display: none; }
+#inquiry .inquiry-box p { font-size: 28px; font-weight: 500; color: #aaa; margin-bottom: 50px; }
+#inquiry .inquiry-box p a { display: inline-block; font-weight: 500; color: #00508f; }
+#inquiry .inquiry-box .contact-form { padding: 0; border: 0; }
+#inquiry .inquiry-box .contact-form-list { align-items: center; margin-bottom: 20px; }
+#inquiry .inquiry-box .contact-form-list.col-group .default { width: 150px; }
+#inquiry .inquiry-box .contact-form-list:not(.col-group) .default { margin-bottom: 30px; }
+#inquiry .inquiry-box .contact-form-list:not(.col-group) .user .col-group { margin-bottom: 20px; }
+#inquiry .inquiry-box .contact-form-list:not(.col-group) .user label { width: 50%; margin: 0; }
+#inquiry .inquiry-box .contact-form-list.agree { margin-bottom: 0; border-bottom: 0; padding: 0; }
+#inquiry .inquiry-box .contact-form-list.agree .user { width: 100%; justify-content: space-between; }
+#inquiry .inquiry-box .contact-footer button { width: 100%; height: 80px; line-height: 78px; } 
+#inquiry .inquiry-bg { position: fixed; top: 0; right: 0; left: 0; bottom: 0; background: rgba(0, 0, 0, .75); -webkit-backdrop-filter: blur(15px); backdrop-filter: blur(15px); z-index: 9996; display: none; }
+#inquiry .inquiry-check { display: none; width: 800px; padding: 40px 0 70px; background: #fff; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; z-index: 9999; }
+#inquiry .inquiry-check .close { width: 30px; position: absolute; top: 30px; right: 30px; cursor: pointer; }
+#inquiry .inquiry-check img:not(.close) { width: 50px; margin-bottom: 25px; }
+#inquiry .inquiry-check h2 { font-size: 25px; color: #333; margin-bottom: 50px; }
+#inquiry .inquiry-check h2 span { color: #00508f; }
+#inquiry .inquiry-check p { font-size: 18px; color: #8f8f8f; line-height: 1.5; margin-bottom: 50px; padding: 0 40px; }
+#inquiry .inquiry-check button { width: 150px; height: 40px; background: #585858; color: #fff; border: 0; outline: 0; font-size: 15px; cursor: pointer; }
+#inquiry #agree_more { top: -280px; width: 600px; }
+
+#inquiry-call { position: fixed; top: 445px; right: 0;}
+#inquiry-call .inquiry-call-btn { position: fixed; width: 60px; height: 70px; top: 445px; right: 0; background: #003a67; cursor: pointer; z-index: 9; }
+#inquiry-call .inquiry-call-btn img { height: 40px; margin-top: 15px; }
+#inquiry-call .inquiry-call-wrap { transform: translateX(100%); width: 260px; height: 70px; background: #003a67; transition: .3s; }
+#inquiry-call .inquiry-call-wrap.open { transform: translateX(0); }
+#inquiry-call .inquiry-call-wrap a { font-size: 20px; color: #fff; font-weight: bold; padding-left: 20px; line-height: 70px; }
+
+
+@media screen and (max-width:1288px) {
+    .container { width: 100%; }
+}
+
+@media screen and (max-width:768px) {
+    #header { height: 55px; z-index: 9999; }
+    #header .header-wrap { padding: 0 15px; }
+    #header .header-wrap .logo { display: none; }
+    #header .header-wrap .logo-m { display: block; width: 100px; top: 15px; left: 15px; }
+    #header .header-wrap .menu-btn { width: 30px; top: 12.5px; right: 15px; }
+    #header .header-wrap .menu-wrap { position: fixed; top: 0; right: -100%; bottom: 0;  width: 100%; height: 100vh; background: rgba(0, 0, 0, .75); -webkit-backdrop-filter: blur(25px); backdrop-filter: blur(25px); z-index: 98; justify-content: center; transition: .2s; margin-right: 0; } 
+    #header .header-wrap .menu-wrap ul {  flex-flow: column; justify-content: center; }
+    #header .header-wrap .menu-wrap ul li a { font-size: 25px; margin-bottom: 26px; color: #fff; font-weight: bold; padding-bottom: 0; }
+    #header .header-wrap .menu-wrap ul li a:hover { border: 0; }
+
+    #footer .footer-wrap { display: none; }
+    #footer .footer-wrap.m { display: flex; flex-flow: column; padding: 20px 0; }
+    #footer .footer-wrap .logo { width: 120px; margin: 30px auto 0; }
+    #footer .footer-wrap ul { padding-left: 20px; }
+    #footer .footer-wrap ul li { padding-bottom: 5px; font-size: 9px; font-weight: 300; }
+    #footer .footer-wrap ul li:last-child { padding-top: 5px; }
+    #footer .footer-wrap ul li p { padding-right: 20px; }
+    #footer .footer-wrap ul li p span { padding-right: 5px; }
+
+    #inquiry .inquiry-btn { width: 43px; height: 145px; font-size: 15px; top: auto; bottom: 180px; left: -43px;}
+    #inquiry .inquiry-box { width: 100vw; padding: 40px 20px 25px; height: 100vh; overflow-y: scroll; }
+    #inquiry .inquiry-box .close { width: 30px; z-index: 9999; top: 25px; right: 20px; }
+    #inquiry .inquiry-box h2 { font-size: 25px; margin-bottom: 10px;}
+    #inquiry .inquiry-box p { font-size: 15px; margin-bottom: 25px; }
+    #inquiry .inquiry-box .contact-form-list { padding: 10px; margin-bottom: 10px; }
+    #inquiry .inquiry-box .contact-form-list .default { font-size: 12px; }
+    #inquiry .inquiry-box .contact-form-list .default span.guide { font-size: 11px; }
+    #inquiry .inquiry-box .contact-form-list.col-group .default { width: 75px; }
+    #inquiry .inquiry-box .contact-form-list:not(.col-group) .default { margin-bottom: 15px; }
+    #inquiry .inquiry-box .contact-form-list .user input[type="text"] { font-size: 12px; }
+    #inquiry .inquiry-box .contact-form-list:not(.col-group) .user .col-group { margin-bottom: 5px; }
+    #inquiry .inquiry-box .contact-form-list:not(.col-group) .user label { width: 50%; margin: 0; font-size: 12px; }
+    #inquiry .inquiry-box .contact-form-list .user label input[type="checkbox"] { width: 1px; }
+    #inquiry .inquiry-box .contact-form-list .user label input[type="checkbox"]::after { width: 15px; height: 15px; transform: translateY(75%); top: -100%; border: 1px solid #c9c9c9; }
+    #inquiry .inquiry-box .contact-form-list .user textarea { font-size: 11px; }
+    #inquiry .inquiry-box .contact-form-list.agree { justify-content: left; padding-left: 10px; }
+    #inquiry .inquiry-box .contact-form-list.agree .user label { font-size: 12px; }
+    #inquiry .inquiry-box .contact-form-list.agree .user button { width: 60px; font-size: 11px; height: 20px; line-height: 18px; }
+    #inquiry .inquiry-box .contact-footer { margin-top: 25px; }
+    #inquiry .inquiry-box .contact-footer button { font-size: 12px; width: 100%; height: 40px; line-height: 38px; } 
+
+    #inquiry .inquiry-check { width: calc( 100% - 40px ); padding: 30px 30px 50px; }
+    #inquiry .inquiry-check .close { width: 30px; top: 20px; right: 20px; }
+    #inquiry .inquiry-check img:not(.close) { width: 40px; margin-bottom: 15px; }
+    #inquiry .inquiry-check h2 { font-size: 24px; margin-bottom: 30px; }
+    #inquiry .inquiry-check p { font-size: 14px; margin-bottom: 30px; }.contact-wrap .contact-check h2
+
+    #inquiry-call { top: auto; bottom: 125px; z-index: 999; }
+    #inquiry-call .inquiry-call-btn { width: 43px; height: 50px; top: auto; bottom: 125px; }
+    #inquiry-call .inquiry-call-btn img { height: 30px; margin-top: 10px; }
+    #inquiry-call .inquiry-call-wrap { width: 200px; height: 50px;}
+    #inquiry-call .inquiry-call-wrap a { font-size: 17px;line-height: 50px; }
+}

@@ -1,0 +1,289 @@
+/*service*/
+
+#wrap{
+    font-family:'Noto Sans KR';
+    font-size: 17px;
+}
+.service-wrap .sub-top {
+    background: url(../images/service-top.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.sub-tab{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.tab {
+    width: 35%;
+    margin: 50px auto 0;
+    display: flex;
+    font-size: 15px;
+}
+.tab li{
+    transition:ease-in-out 0.5s;
+}
+.tab-3ea li{
+    width: 33.333333%;
+}
+.tab li a{
+    padding: 15px;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid #333;
+}
+.tab li .ko, .tab .is_on .ko {
+    display: none;
+}
+
+.tab li:hover, .tab .is_on{
+    background: #333;
+}
+
+.tab li:hover .ko, .tab .is_on .ko{
+    display: block;
+    color: #fff;
+    font-weight: 700;
+}
+
+.tab li:hover .en, .tab .is_on .en{
+    display: none;
+}
+
+.service-wrap .sub-con{
+    margin: 50px auto 100px;
+}
+.subTitle{  
+    position: relative;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 40px;
+    font-weight: 300;
+    letter-spacing: 20px;
+}
+.subTitle::before{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 25%;
+    height: 1px;
+    background: #c9c9c9;
+    left: 0;
+    top: 50%;
+}
+.subTitle::after{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 25%;
+    height: 1px;
+    background: #c9c9c9;
+    right: 0;
+    top: 50%;
+}
+.subTxt{
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    margin: 50px auto;
+}
+
+.service-box{
+    display: flex;
+    width: 83%;
+    margin: 0 auto;
+}
+.service-box-2ea{
+    width: 55%;
+}
+
+.service-box .box {
+    width: 33.333333%;
+    text-align: center;
+    background-color: #f9f9f9;
+    border: 1px solid #f9f9f9;
+    padding: 200px 0 50px;
+    height: 370px;
+    background-repeat: no-repeat;
+    background-position:top 20% center;
+}
+.service-box-2ea .box{
+    width: 50%;
+}
+.service-box .box:nth-child(2){
+    background-color: #fff;
+    border: solid 1px #c9c9c9;    
+}
+
+.service-box  .box01{
+    background-image:url(../images/sub/icon_service_01.png);
+}
+.service-box  .box02{
+    background-image:url(../images/sub/icon_service_02.png);
+}
+.service-box  .box03{
+    background-image:url(../images/sub/icon_service_03.png);
+}
+.service-box  .box04{
+    background-image:url(../images/sub/icon_service_04.png);
+}
+.service-box  .box05{
+    background-image:url(../images/sub/icon_service_05.png);
+}
+.service-box  .box06{
+    background-image:url(../images/sub/icon_service_06.png);
+}
+.service-box  .box07{
+    background-image:url(../images/sub/icon_service_07.png);
+}
+.service-box  .box08{
+    background-image:url(../images/sub/icon_service_08.png);
+}
+.service-box  .box09{
+    background-image:url(../images/sub/icon_service_09.png);
+}
+.service-box  .box10{
+    background-image:url(../images/sub/icon_service_10.png);
+}
+.service-box  .box11{
+    background-image:url(../images/sub/icon_service_11.png);
+}
+
+.service-box .box img{
+    width: auto;
+}
+.service-box .box .ti{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+.service-wrap .process-bg{
+    background: #F2F2F2;
+    margin-bottom: 0;
+    padding: 100px 0;
+}
+.process-box .box{
+    display: inline-block;
+    width: 16%;
+    text-align: center;
+    padding-top: 75px;
+    background-repeat: no-repeat;
+    background-position:top center;
+}
+.process-box .box01{
+    background-image:url(../images/sub/icon_process_01.png);
+}
+.process-box .box02{
+    background-image:url(../images/sub/icon_process_02.png);
+}
+.process-box .box03{
+    background-image:url(../images/sub/icon_process_03.png);
+}
+.process-box .box04{
+    background-image:url(../images/sub/icon_process_04.png);
+}
+.process-box .box05{
+    background-image:url(../images/sub/icon_process_05.png);
+}
+.process-box .box06{
+    background-image:url(../images/sub/icon_process_06.png);
+}
+.process-box .box .num{
+    position: relative;
+    margin: 20px auto;
+    width: 40px;
+    height: 40px;
+    line-height: 2;
+    background: #F2F2F2;
+    border: 1px solid #00A8F2;
+    color: #00A8F2;
+    font-size: 20px;
+    font-weight: 300;
+}
+.process-box .box .num::after{
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 200px;
+    height: 1px;
+    background: #00A8F2;
+    left:100%;
+    top: 50%;
+}
+.process-box .box:last-child .num::after{
+    display: none;
+}
+.process-box .box .ti{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+
+
+/*contact*/
+
+.contact-wrap .sub-top {
+    background: url(../images/contact-top.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.contact-wrap .subTitle{
+    margin: 50px auto;
+}
+
+.estimate-wrap {
+    border-top: 2px solid #333;
+    border-bottom: 2px solid #333;
+    margin-bottom: 100px;
+    padding: 50px 0;
+}
+
+.estimate-wrap .boxWrap{
+    display: flex;    
+}
+
+.estimate-wrap .box {
+    width: 100%;
+    font-size: 20px;
+    padding: 25px 15px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 25px;
+}
+
+.estimate-wrap .box i{
+    color: #ff3434;
+}
+.estimate-wrap .box-50 {
+    width: 49%;
+}
+.estimate-wrap .box-50:first-child{
+    margin-right: 2%;
+}
+.estimate-wrap .box ul li {
+    display: inline;
+    margin-right: 25px;
+}
+.estimate-wrap input {
+    border: 0;
+    font-size: 20px;
+}
+.estimate-wrap fieldset {
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-block-start: 0;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+    padding-block-end: 0;
+    min-inline-size: 0;
+    border-width: 0;
+}
+
+/*portfolio*/
+
+.portfolio-wrap .sub-top {
+    background: url(../images/portfolio-top.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
