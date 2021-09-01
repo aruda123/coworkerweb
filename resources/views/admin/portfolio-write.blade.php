@@ -111,9 +111,9 @@
                     <p>
                         상세이미지 업로드 <span class="guide">(목업에 맞춰 등록해 주세요.)</span>
                     </p>
-                    {{-- <button>
-                        <a href="" download="./images/PORTFOLIO-0.psd">목업다운로드</a>
-                    </button> --}}
+                    <button>
+                        <a href="{{ url('admin/images/PORTFOLIO-0.psd') }}" download>목업다운로드</a>
+                    </button>
                 </div>
                 <div class="user">
                     <div class="file-upload-wrap" id="detail_drop">

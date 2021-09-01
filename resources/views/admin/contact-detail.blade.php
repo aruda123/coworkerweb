@@ -236,7 +236,7 @@ $service = explode(" | ", $contact->service);
                             <input type="hidden" class="fn" value="{{ $file->fn }}">
                             <input type="hidden" class="fn_ori" value="{{ $file->fn_ori }}">
                             <li>
-                                <button onclick="location.href='{{ url('adm/contact/fileDownload') }}/{{ $file->fn }}/{{ $file->fn_ori }}'">
+                                <button onclick="location.href='{{ url('adm/fileDownload') }}/{{ $file->fn }}/{{ $file->fn_ori }}'">
                                     <span>{{ $file->fn_ori }}</span>
                                     <img src="{{ asset('admin/images/file_download_black_24dp.svg') }}" alt="">
                                 </button>

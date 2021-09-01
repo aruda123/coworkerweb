@@ -325,7 +325,7 @@
 .contact-wrap .sub-con .contact-footer button { width: 200px; height: 60px; font-size: 20px; background: #00508f; color: #fff; text-align: center; border: 3px solid #00508f; outline: 0; line-height: 58px; cursor: pointer; font-weight: bold; transition: .3s; }
 .contact-wrap .sub-con .contact-footer button:hover { background: #fff; color: #00508f; }
 
-.contact-wrap .contact-check { height: calc( 100vh - 360px ); margin: 0 auto; flex-flow: column; justify-content: center; text-align: center; }
+.contact-wrap .contact-check { height: calc( 100vh - 360px ); margin: 0 auto; flex-flow: column; justify-content: center; text-align: center; padding:200px 0; }
 .contact-wrap .contact-check img { width: 80px; margin: 0 auto 25px; }
 .contact-wrap .contact-check h2 { font-size: 35px; color: #333; margin-bottom: 50px; letter-spacing: inherit; font-weight: inherit; }
 .contact-wrap .contact-check h2::after, .contact-wrap .contact-check h2::before { display: none; }

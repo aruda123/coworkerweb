@@ -85,6 +85,7 @@
 #content .con-wrap .contact-form li.file .user li { margin-right: 20px; margin-bottom: 10px; }
 #content .con-wrap .contact-form li.file .user li button { border: 0; outline: 0; padding: 10px 20px; display: flex; align-items: center; cursor: pointer; background: #f9f9f9; }
 #content .con-wrap .contact-form li.file .user li button span { font-size: 15px; font-weight: bold; color: #777; display: block; margin-right: 10px; }
+#content .con-wrap .contact-form li.file .user li button img { width: 20px; }
 #content .con-wrap .contact-form li.file .user li button:hover { background: #e9e9e9; }
 
 #content .con-wrap .port-form li .user { max-width: calc( 100% - 150px ); width: 100%; }

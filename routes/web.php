@@ -39,11 +39,11 @@ Route::prefix('adm')->group(function(){
     Route::get('/', [AdminController::class, 'index']);
     Route::post('auth', [AdminController::class, 'auth']);
     Route::get('logout', [AdminController::class, 'logout']);
+    Route::get('/fileDownload/{fn}/{fn_ori}', [AdminController::class, 'fileDownload']);
 
     Route::prefix('contact')->group(function(){
         Route::get('/', [AdminController::class, 'contact']);
         Route::get('/{id}', [AdminController::class, 'contactShow']);
-        Route::get('/fileDownload/{fn}/{fn_ori}', [AdminController::class, 'fileDownload']);
         Route::DELETE('/contactDestory', [AdminController::class, 'contactDestory']);
     });
 
